@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad909f81-bf1e-4bcf-9dd6-92a65f26eea9">
+  <name>ОбщиеМодули</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общие модули</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <parentSubsystem>Subsystem.ИнвестиционнаяДеятельностьСлужебный</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87df68ec-1183-4268-a8a1-652f5018f12a">
+  <name>ОпределяемыеТипы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Определяемые типы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <parentSubsystem>Subsystem.ИнвестиционнаяДеятельностьСлужебный</parentSubsystem>
+</mdclass:Subsystem>

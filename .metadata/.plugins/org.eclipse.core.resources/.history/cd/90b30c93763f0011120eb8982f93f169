@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаВРубляхОборот</dataPath>
+			<field>СуммаВРубляхОборот</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Криптовалюта</dataPath>
+			<field>Криптовалюта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Прибыль</dataPath>
+			<field>Прибыль</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазницаПриПродаже</dataPath>
+			<field>РазницаПриПродаже</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разница при продаже</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОстаток</dataPath>
+			<field>КоличествоОстаток</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущаяЦена</dataPath>
+			<field>ТекущаяЦена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая цена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПокупкиАктивов</dataPath>
+			<field>СуммаПокупкиАктивов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма покупки активов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущаяСтоимостьАктивов</dataPath>
+			<field>ТекущаяСтоимостьАктивов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая стоимость активов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаВUSDTОборот</dataPath>
+			<field>СуммаВUSDTОборот</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КомиссияСетиОборот</dataPath>
+			<field>КомиссияСетиОборот</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СпотовыеСделки.Криптовалюта КАК Криптовалюта,
+	СУММА(СпотовыеСделки.Прибыль) КАК Прибыль
+ПОМЕСТИТЬ ВТ_ПрибыльПоКриптовалюте
+ИЗ
+	РегистрНакопления.СпотовыеСделки КАК СпотовыеСделки
+
+СГРУППИРОВАТЬ ПО
+	СпотовыеСделки.Криптовалюта
+	
+ИНДЕКСИРОВАТЬ ПО
+	Криптовалюта		
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СпотовыеСделкиОстатки.Криптовалюта КАК Криптовалюта,
+	СпотовыеСделкиОстатки.КоличествоОстаток КАК КоличествоОстаток,
+	СпотовыеСделкиОстатки.СуммаОстаток КАК СуммаОстаток
+ПОМЕСТИТЬ ВТ_ТекущиеАктивы
+ИЗ
+	РегистрНакопления.СпотовыеСделки.Остатки({(&amp;ДатаСреза)}, ) КАК СпотовыеСделкиОстатки
+	
+ИНДЕКСИРОВАТЬ ПО
+	Криптовалюта	
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЦеныКриптовалютныхАктивовСрезПоследних.Криптовалюта КАК Криптовалюта,
+	ЦеныКриптовалютныхАктивовСрезПоследних.Цена КАК Цена
+ПОМЕСТИТЬ ВТ_ТекущиеЦеныАктивов
+ИЗ
+	РегистрСведений.ЦеныКриптовалютныхАктивов.СрезПоследних(
+			{(&amp;ДатаСреза)},
+			Криптовалюта В
+				(ВЫБРАТЬ
+					ВТ_ТекущиеАктивы.Криптовалюта
+				ИЗ
+					ВТ_ТекущиеАктивы)) КАК ЦеныКриптовалютныхАктивовСрезПоследних
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ТекущиеАктивы.Криптовалюта КАК Криптовалюта,
+	ВТ_ТекущиеАктивы.КоличествоОстаток КАК КоличествоОстаток,
+	ЕСТЬNULL(ВТ_ТекущиеЦеныАктивов.Цена, 0) КАК ТекущаяЦена,
+	ВТ_ТекущиеАктивы.СуммаОстаток КАК СуммаПокупкиАктивов,
+	ВТ_ТекущиеАктивы.КоличествоОстаток * ЕСТЬNULL(ВТ_ТекущиеЦеныАктивов.Цена, 0) КАК ТекущаяСтоимостьАктивов,
+	ВТ_ТекущиеАктивы.КоличествоОстаток * ЕСТЬNULL(ВТ_ТекущиеЦеныАктивов.Цена, 0) - ВТ_ТекущиеАктивы.СуммаОстаток КАК РазницаПриПродаже,
+	0 КАК Прибыль,
+	0 КАК СуммаВРубляхОборот,
+	0 КАК СуммаВUSDTОборот,
+	0 КАК КомиссияСетиОборот
+ИЗ
+	ВТ_ТекущиеАктивы КАК ВТ_ТекущиеАктивы
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ТекущиеЦеныАктивов КАК ВТ_ТекущиеЦеныАктивов
+		ПО ВТ_ТекущиеАктивы.Криптовалюта = ВТ_ТекущиеЦеныАктивов.Криптовалюта
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ПрибыльПоКриптовалюте.Криптовалюта,
+	0,
+	0,
+	0,
+	0,
+	0,
+	ВТ_ПрибыльПоКриптовалюте.Прибыль,
+	0,
+	0,
+	0
+ИЗ
+	ВТ_ПрибыльПоКриптовалюте КАК ВТ_ПрибыльПоКриптовалюте
+</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КомиссияСетиОборот</dataPath>
+			<field>КомиссияСетиОборот</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаВРубляхОборот</dataPath>
+			<field>СуммаВРубляхОборот</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаВUSDTОборот</dataPath>
+			<field>СуммаВUSDTОборот</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ИнвестиционнаяДеятельностьОбороты.СуммаВРубляхОборот КАК СуммаВРубляхОборот,
+	ИнвестиционнаяДеятельностьОбороты.СуммаВUSDTОборот КАК СуммаВUSDTОборот,
+	ИнвестиционнаяДеятельностьОбороты.КомиссияСетиОборот КАК КомиссияСетиОборот
+ИЗ
+	РегистрНакопления.ИнвестиционнаяДеятельность.Обороты({(&amp;ДатаНачала)}, {(&amp;ДатаОкончания)}, , ) КАК ИнвестиционнаяДеятельностьОбороты
+;</query>
+	</dataSet>
+	<totalField>
+		<dataPath>КоличествоОстаток</dataPath>
+		<expression>Сумма(КоличествоОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КомиссияСетиОборот</dataPath>
+		<expression>Сумма(КомиссияСетиОборот)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Прибыль</dataPath>
+		<expression>Сумма(Прибыль)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РазницаПриПродаже</dataPath>
+		<expression>Сумма(РазницаПриПродаже)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаВUSDTОборот</dataPath>
+		<expression>Сумма(СуммаВUSDTОборот)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаВРубляхОборот</dataPath>
+		<expression>Сумма(СуммаВРубляхОборот)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПокупкиАктивов</dataPath>
+		<expression>Сумма(СуммаПокупкиАктивов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ТекущаяСтоимостьАктивов</dataPath>
+		<expression>Сумма(ТекущаяСтоимостьАктивов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ТекущаяЦена</dataPath>
+		<expression>Сумма(ТекущаяЦена)</expression>
+	</totalField>
+	<parameter>
+		<name>ДатаСреза</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата среза</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДатаСеанса()</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">1990-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДатаСеанса()</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекущаяЦена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаПокупкиАктивов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекущаяСтоимостьАктивов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РазницаПриПродаже</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Прибыль</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаВUSDTОборот</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаВРубляхОборот</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КомиссияСетиОборот</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДатаНачала</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Криптовалюта</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
