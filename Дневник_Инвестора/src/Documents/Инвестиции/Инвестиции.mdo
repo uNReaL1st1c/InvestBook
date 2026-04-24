@@ -7,13 +7,13 @@
     <listType typeId="e3a41b76-485f-4b0e-b276-2bdcacd11cca" valueTypeId="3da29b9f-3fbc-41db-ab39-091300fced94"/>
     <managerType typeId="b21df3cf-3809-41da-8601-d88184de34e5" valueTypeId="9c194412-08ae-437c-982d-dd25ed9ddc53"/>
   </producedTypes>
-  <name>КриптовалютныеИнвестиции</name>
+  <name>Инвестиции</name>
   <synonym>
     <key>ru</key>
-    <value>Криптовалютные инвестиции</value>
+    <value>Инвестиции</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.КриптовалютныеИнвестиции.StandardAttribute.Number</inputByString>
+  <inputByString>Document.Инвестиции.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -27,7 +27,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.КриптовалютныеИнвестиции.Form.ФормаДокумента</defaultObjectForm>
+  <defaultObjectForm>Document.Инвестиции.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.ИнвестиционнаяДеятельность</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>

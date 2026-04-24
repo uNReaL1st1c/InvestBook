@@ -463,7 +463,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DocumentObject.КриптовалютныеИнвестиции</types>
+      <types>DocumentObject.Инвестиции</types>
     </valueType>
     <view>
       <common>true</common>

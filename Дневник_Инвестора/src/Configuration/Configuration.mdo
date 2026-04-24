@@ -1099,7 +1099,7 @@
   <catalogs>Catalog.Эмитенты</catalogs>
   <documents>Document.Встреча</documents>
   <documents>Document.ЗапланированноеВзаимодействие</documents>
-  <documents>Document.КриптовалютныеИнвестиции</documents>
+  <documents>Document.Инвестиции</documents>
   <documents>Document.СообщениеSMS</documents>
   <documents>Document.СпотоваяСделка</documents>
   <documents>Document.ТелефонныйЗвонок</documents>
