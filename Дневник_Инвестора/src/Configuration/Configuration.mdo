@@ -1071,8 +1071,9 @@
   <commonForms>CommonForm.ФормаНастроекОтчета</commonForms>
   <commonForms>CommonForm.ФормаОтчета</commonForms>
   <commonForms>CommonForm.ФормаПоиска</commonForms>
-  <catalogs>Catalog.Валюты</catalogs>
   <catalogs>Catalog.Акции</catalogs>
+  <catalogs>Catalog.Биржи</catalogs>
+  <catalogs>Catalog.Валюты</catalogs>
   <catalogs>Catalog.ВариантыОтчетов</catalogs>
   <catalogs>Catalog.ВерсииРасширений</catalogs>
   <catalogs>Catalog.ВерсииФайлов</catalogs>
@@ -1102,6 +1103,7 @@
   <catalogs>Catalog.ПредопределенныеВариантыОтчетов</catalogs>
   <catalogs>Catalog.ПредопределенныеВариантыОтчетовРасширений</catalogs>
   <catalogs>Catalog.СектораЭкономики</catalogs>
+  <catalogs>Catalog.СетиБлокчейн</catalogs>
   <catalogs>Catalog.СообщениеSMSПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.СтраныМира</catalogs>
   <catalogs>Catalog.СтроковыеКонтактыВзаимодействий</catalogs>
@@ -1120,6 +1122,7 @@
   <documents>Document.СообщениеSMS</documents>
   <documents>Document.СпотоваяСделка</documents>
   <documents>Document.ТелефонныйЗвонок</documents>
+  <documents>Document.ТранзакционныеИздержки</documents>
   <documents>Document.УстановкаЦенКриптовалютныхАктивов</documents>
   <documents>Document.ЭлектронноеПисьмоВходящее</documents>
   <documents>Document.ЭлектронноеПисьмоИсходящее</documents>
@@ -1162,6 +1165,7 @@
   <enums>Enum.СтатусыОбработчиковОбновления</enums>
   <enums>Enum.СтатусыЭлектронныхПисем</enums>
   <enums>Enum.ТипыДанныхКэшаПрограммныхИнтерфейсов</enums>
+  <enums>Enum.ТипыКомиссии</enums>
   <enums>Enum.ТипыКонтактнойИнформации</enums>
   <enums>Enum.ТипыОтчетов</enums>
   <enums>Enum.ТипыПредопределенныхПапокПисем</enums>

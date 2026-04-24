@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8cdeb0cd-7365-4f9b-981e-e0c3abb53dc8">
+  <producedTypes>
+    <refType typeId="49bbe9b0-f513-48a7-b47f-8d0ee4903c9f" valueTypeId="0b7027a6-947b-4241-8fea-eb20ff93f75c"/>
+    <listType typeId="11f150e2-9612-4cfc-9c91-069b2d4ef31b" valueTypeId="de67dd76-a4ee-43b8-b70f-f6f61b536796"/>
+    <managerType typeId="ff2d05dc-bcd4-4750-a3b0-fc049bbcac2f" valueTypeId="eafa80fa-0b46-4fa0-9ead-40433e5d3007"/>
+  </producedTypes>
+  <name>ТипыКомиссии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы комиссии</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="5b536103-889b-4bd6-beb3-3701d685af1c">
+    <name>Gas</name>
+    <synonym>
+      <key>ru</key>
+      <value>Gas</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="194aa253-0505-46fa-a32a-c826392f6419">
+    <name>Своп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Своп</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="90d5b015-bc16-478d-8e65-e9658e2b925e">
+    <name>Валидатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валидатор</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0dc132df-2229-4542-830b-e387f17625b2">
+    <name>Биржевая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Биржевая</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

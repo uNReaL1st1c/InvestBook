@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e5d0d3e-d6a7-48c4-a7f9-5ad4070e2d40">
+  <producedTypes>
+    <objectType typeId="e4927b97-994d-4976-b8fa-92caa8607210" valueTypeId="4963e6d6-2eb1-4dff-a76e-2427678d6424"/>
+    <refType typeId="14e39f59-b300-4111-bdbe-3e2684be252a" valueTypeId="3274b3ab-6010-408e-9d22-1245a8289d99"/>
+    <selectionType typeId="c5fecb65-8a34-4b64-8a33-275e6e1b6c59" valueTypeId="169dfd77-3938-44ad-9224-bb1919ecf0ab"/>
+    <listType typeId="7591a909-4807-4237-9bd8-71e3ebb5e4e2" valueTypeId="8947ac07-085b-4544-b321-92b5e46ebaa3"/>
+    <managerType typeId="9431ca30-517c-4d81-8df5-dc36712647f4" valueTypeId="22edd201-7e42-4a11-97d6-180890db0850"/>
+  </producedTypes>
+  <name>СетиБлокчейн</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сети блокчейн</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СетиБлокчейн.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.СетиБлокчейн.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Сеть блокчейн</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>
