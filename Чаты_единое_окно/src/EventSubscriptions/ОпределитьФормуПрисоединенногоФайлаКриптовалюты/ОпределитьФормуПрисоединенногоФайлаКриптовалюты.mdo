@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="787dd02f-7ef4-4e93-9a50-5951e752367d">
+  <name>ОпределитьФормуПрисоединенногоФайлаКриптовалюты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Определить форму присоединенного файла (Криптовалюты)</value>
+  </synonym>
+  <source>
+    <types>CatalogManager.КриптовалютыПрисоединенныеФайлы</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.РаботаСФайламиКлиентСервер.ОпределитьФормуПрисоединенногоФайла</handler>
+</mdclass:EventSubscription>
