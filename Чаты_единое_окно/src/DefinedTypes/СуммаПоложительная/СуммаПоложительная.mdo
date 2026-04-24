@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1313d441-d125-4e46-b411-ce5cabe0e631">
+  <producedTypes>
+    <containerType typeId="f5f7f15b-8751-4546-a535-6cb183334a88" valueTypeId="457247d0-f1b5-4249-b3f7-a2cfe2172129"/>
+  </producedTypes>
+  <name>СуммаПоложительная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сумма положительная</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>3</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

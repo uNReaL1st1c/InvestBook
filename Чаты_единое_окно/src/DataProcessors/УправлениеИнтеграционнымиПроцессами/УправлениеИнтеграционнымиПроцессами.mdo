@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8a2e6ec-9559-4667-a301-274583b2aa32">
+  <producedTypes>
+    <objectType typeId="b8b16411-6465-48b9-b17d-e462c66a53c9" valueTypeId="57d458d1-d6e7-4cbf-9208-16fde243d444"/>
+    <managerType typeId="a09d7d99-1be8-44e5-8112-9af433ef5d3c" valueTypeId="96888786-d3cd-491c-a263-89bffd394e08"/>
+  </producedTypes>
+  <name>УправлениеИнтеграционнымиПроцессами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление интеграционными процессами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УправлениеИнтеграционнымиПроцессами.Form.ОсновнаяПанельНастроек</defaultForm>
+  <forms uuid="09d8e019-b039-417f-bcc2-7f999ac70176">
+    <name>ОсновнаяПанельНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная панель настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c763b4a5-ad3f-4c22-a200-390919380782">
+    <name>НастройкиИнтеграцииСCryptoRank</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки интеграции с CryptoRank</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

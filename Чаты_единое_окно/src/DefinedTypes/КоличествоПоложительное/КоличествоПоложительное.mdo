@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c75cf15-c12b-4aec-b8f2-7c66917209d5">
+  <producedTypes>
+    <containerType typeId="75a88ddf-6cb4-4203-b082-cd356a27fa2b" valueTypeId="4189bb8a-e979-4a1e-9f6b-47dd310f46aa"/>
+  </producedTypes>
+  <name>КоличествоПоложительное</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество положительное</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>20</precision>
+      <scale>5</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

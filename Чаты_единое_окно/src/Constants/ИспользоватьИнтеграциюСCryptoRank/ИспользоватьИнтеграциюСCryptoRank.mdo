@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6de0b04a-3a11-4e1a-8234-e48b85975972">
+  <producedTypes>
+    <managerType typeId="bd99fbe1-0ce9-452a-b27a-c645fa89b9bb" valueTypeId="10ea4877-4b12-494f-aeb5-39f82c7252c3"/>
+    <valueManagerType typeId="09386088-f760-481a-95c9-aca660fa3bac" valueTypeId="22b7a966-5e24-411a-b891-37fd6b75d952"/>
+    <valueKeyType typeId="73fbe3cc-6c67-4ddf-8b38-18ad1f5c6b7a" valueTypeId="cd0c4719-4742-4f42-9f78-f41d9c061351"/>
+  </producedTypes>
+  <name>ИспользоватьИнтеграциюСCryptoRank</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать интеграцию с &quot;https://CryptoRank.io&quot;</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

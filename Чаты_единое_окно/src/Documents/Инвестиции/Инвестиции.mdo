@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3257ac6d-d552-47e5-96d7-a9a6aaa5ead6">
+  <producedTypes>
+    <objectType typeId="cb7b4154-c66c-47e0-b93e-2319db572612" valueTypeId="b32f1b5a-9726-47ba-a428-2ca6f18347d8"/>
+    <refType typeId="1c444333-61f5-4fbf-a824-5b36ba4a6584" valueTypeId="07ef392c-cc2e-43a5-bde8-7e0fde30e908"/>
+    <selectionType typeId="d76989a4-3e1b-479b-9a3b-b76b2394cba4" valueTypeId="f9c24a38-d6f8-4b7f-b8ff-d3f37ed61656"/>
+    <listType typeId="e3a41b76-485f-4b0e-b276-2bdcacd11cca" valueTypeId="3da29b9f-3fbc-41db-ab39-091300fced94"/>
+    <managerType typeId="b21df3cf-3809-41da-8601-d88184de34e5" valueTypeId="9c194412-08ae-437c-982d-dd25ed9ddc53"/>
+  </producedTypes>
+  <name>Инвестиции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инвестиции</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Инвестиции.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Инвестиции</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Инвестиции.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ИнвестиционнаяДеятельность</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="23c5524b-84ce-4cda-b090-5c39f7b897e2">
+    <name>КомиссияСети</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комиссия сети</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="139d9853-50c3-4289-ad30-6b24d20bc8a5">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f694e502-655e-4e6a-ac96-112d6af58711">
+    <name>СуммаВUSDT</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма В USDT</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СуммаПоложительная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c6d88a44-028b-4475-a638-3fdbec6926b1">
+    <name>СуммаВРублях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма в рублях</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СуммаПоложительная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="52bd61a3-fd53-4a1e-87cf-ff0520103a06">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3e2c53a2-8083-4f2a-aa65-5b34e5f97f92">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>
