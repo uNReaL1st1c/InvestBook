@@ -3377,3 +3377,9 @@ java.lang.IllegalStateException: Object is removed
 	at com._1c.g5.v8.dt.bsl.ui.editor.BslXtextDocumentProvider$BslValidationJob.createIssues(BslXtextDocumentProvider.java:361)
 	at org.eclipse.xtext.ui.editor.validation.ValidationJob.run(ValidationJob.java:68)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2026-04-24 13:43:42.123
+!MESSAGE CPU overload. Memory 2034189632 used of 4294967296
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2026-04-24 14:52:24.163
+!MESSAGE Critical CPU overload. Memory 2040071328 used of 4294967296
