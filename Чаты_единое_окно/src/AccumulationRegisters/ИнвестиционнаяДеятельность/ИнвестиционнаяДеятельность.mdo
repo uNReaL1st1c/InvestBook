@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7e4eddf-1912-444a-a2ba-a7ff6fad6592">
+  <producedTypes>
+    <selectionType typeId="e5da8043-db52-4037-8885-382f07441673" valueTypeId="dbc963e8-f7ba-4856-83c8-0a05603c7d1c"/>
+    <listType typeId="91c41e43-2fb3-4465-a8e8-d2f790d412a1" valueTypeId="61eccd41-dfdb-426c-a89e-03c445405c1e"/>
+    <managerType typeId="03a1654a-9671-4300-ac8c-300ce96efe14" valueTypeId="682d1d36-6871-442d-96f8-0bb98984d7d8"/>
+    <recordSetType typeId="bc22f5ed-dd8b-4276-b66e-11728cb04065" valueTypeId="959376ab-4948-406a-8967-34d1b1ef68af"/>
+    <recordKeyType typeId="0553606d-baa1-459b-848c-0a877910d977" valueTypeId="91302cdb-85c3-4bad-872f-b8d9a0ade49b"/>
+    <recordType typeId="f50fe7e4-8644-4244-9d16-fede9514fa03" valueTypeId="161fa940-b53e-4b9e-9f2e-309cc4d5d824"/>
+  </producedTypes>
+  <name>ИнвестиционнаяДеятельность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инвестиционная деятельность</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="80e71ecb-0104-442c-bc68-24838425feaa">
+    <name>СуммаВРублях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма в рублях</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СуммаПоложительная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="615b9993-4e1b-4839-9550-b3c64fd3f391">
+    <name>СуммаВUSDT</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма В USDT</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СуммаПоложительная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="08e3a737-7a43-4377-bbc3-d1fb2e1de25b">
+    <name>КомиссияСети</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комиссия сети</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+</mdclass:AccumulationRegister>
