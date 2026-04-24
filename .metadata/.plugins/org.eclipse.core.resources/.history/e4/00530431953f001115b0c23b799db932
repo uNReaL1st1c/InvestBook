@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a66242b-c667-45b2-bb6b-2dc60036084f">
+  <producedTypes>
+    <selectionType typeId="fa846cd5-15d7-4c84-9a38-3c9d5d9fe850" valueTypeId="f7331013-ec85-493f-b9e5-530b1bef1f58"/>
+    <listType typeId="487e8751-226c-4c18-b5ae-7644f9e12604" valueTypeId="808f285b-9b9a-4649-88ae-961178143d55"/>
+    <managerType typeId="6ee73d5c-f212-48f4-b906-7a84cc37abdf" valueTypeId="ba7f1dbd-ac65-4316-8af0-73ae1845f50c"/>
+    <recordSetType typeId="111b9a91-9d45-43bd-a287-e1a355d76949" valueTypeId="166c270e-7ccf-41da-b1a8-32ae8ebf48c5"/>
+    <recordKeyType typeId="deafb2ba-1429-46c8-8954-bff2c40a3884" valueTypeId="653e2c04-662c-4d7e-9f3a-cc683e74fb51"/>
+    <recordType typeId="2d273236-c26d-4c11-9972-646139852296" valueTypeId="8df75032-a007-4f87-894e-c528911590fa"/>
+  </producedTypes>
+  <name>СпотовыеСделки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спотовые сделки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="f97b9f0c-ba0b-4583-8c23-2f17c91b3358">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>7</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="35a66ec4-504b-4910-9118-22cdc465da8a">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="0008ef8f-3bdb-4415-9aff-0d631700936c">
+    <name>Прибыль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прибыль</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="a7958e3e-a110-4aa9-ab07-93f194712e5f">
+    <name>Актив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Криптовалюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

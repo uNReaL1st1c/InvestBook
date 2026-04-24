@@ -145,4 +145,67 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <tabularSections uuid="86a0f505-53e2-4301-b55b-3e68fba2fe7e">
+    <producedTypes>
+      <objectType typeId="f5425287-58b8-4253-8840-2bec09e53076" valueTypeId="3f7d6805-a2db-49e9-b437-cde078704733"/>
+      <rowType typeId="a65d2dea-be09-457f-b3f6-c513b308c759" valueTypeId="54d18559-1a27-4619-b8d7-a8a714311251"/>
+    </producedTypes>
+    <name>Операции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операции</value>
+    </synonym>
+    <attributes uuid="f65098f1-70f4-4117-a7a4-99217e074ecf">
+      <name>Актив</name>
+      <synonym>
+        <key>ru</key>
+        <value>Актив</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Актив</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c7a6bfa0-3629-4d0f-8d9c-ad803c941187">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>7</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ed9b50dd-98ce-4fde-a321-8dd7ef9d005f">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
 </mdclass:Document>

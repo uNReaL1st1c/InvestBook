@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33c08d26-71ba-43f2-b14f-4bce956fd35e">
+  <producedTypes>
+    <objectType typeId="45036331-f7e9-4a51-9cda-af20b30cd3d4" valueTypeId="ed7847c8-5823-4996-8f69-e45a76c8093a"/>
+    <refType typeId="7c8a42f5-c9ff-4a28-a097-25dbe5e8a1b1" valueTypeId="d3c59d0a-f0da-4b32-9502-30f9be2034ea"/>
+    <selectionType typeId="884b16f4-8cdb-47b6-a5c7-3057ab1579a7" valueTypeId="db56411d-1508-4a31-abe9-83ae38bb81d8"/>
+    <listType typeId="5bfc67e7-5cc6-47ea-aded-e73bbd3ed9b7" valueTypeId="ecc755f2-45f8-450b-809d-932d6ff4cd0a"/>
+    <managerType typeId="b4dd6801-54f8-42c1-8077-f248e983359c" valueTypeId="5f0770c8-df0a-43b1-993e-dd26dd0c9378"/>
+  </producedTypes>
+  <name>Акции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акции</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Акции.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Акции.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

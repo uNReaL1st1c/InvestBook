@@ -885,6 +885,7 @@
   <functionalOptions>FunctionalOption.ХранитьФайлыВТомахНаДиске</functionalOptions>
   <functionalOptionsParameters>FunctionalOptionsParameter.ДополнительныеОтчетыИОбработкиОбъектНазначения</functionalOptionsParameters>
   <functionalOptionsParameters>FunctionalOptionsParameter.ДополнительныеОтчетыИОбработкиТипФормы</functionalOptionsParameters>
+  <definedTypes>DefinedType.Актив</definedTypes>
   <definedTypes>DefinedType.ВариантОбновляемогоОтчета</definedTypes>
   <definedTypes>DefinedType.ВладелецДополнительныхСведений</definedTypes>
   <definedTypes>DefinedType.ВладелецКонтактнойИнформации</definedTypes>
@@ -1054,6 +1055,7 @@
   <commonForms>CommonForm.ФормаНастроекОтчета</commonForms>
   <commonForms>CommonForm.ФормаОтчета</commonForms>
   <commonForms>CommonForm.ФормаПоиска</commonForms>
+  <catalogs>Catalog.Акции</catalogs>
   <catalogs>Catalog.ВариантыОтчетов</catalogs>
   <catalogs>Catalog.ВерсииРасширений</catalogs>
   <catalogs>Catalog.ВерсииФайлов</catalogs>
@@ -1074,6 +1076,7 @@
   <catalogs>Catalog.КриптовалютыПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.НаборыДополнительныхРеквизитовИСведений</catalogs>
   <catalogs>Catalog.НастройкиАвторизацииИнтернетСервисов</catalogs>
+  <catalogs>Catalog.Облигации</catalogs>
   <catalogs>Catalog.ПапкиФайлов</catalogs>
   <catalogs>Catalog.ПапкиЭлектронныхПисем</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
@@ -1081,6 +1084,7 @@
   <catalogs>Catalog.ПравилаОбработкиЭлектроннойПочты</catalogs>
   <catalogs>Catalog.ПредопределенныеВариантыОтчетов</catalogs>
   <catalogs>Catalog.ПредопределенныеВариантыОтчетовРасширений</catalogs>
+  <catalogs>Catalog.СектораЭкономики</catalogs>
   <catalogs>Catalog.СообщениеSMSПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.СтраныМира</catalogs>
   <catalogs>Catalog.СтроковыеКонтактыВзаимодействий</catalogs>
@@ -1092,9 +1096,10 @@
   <catalogs>Catalog.ХранилищеДвоичныхДанных</catalogs>
   <catalogs>Catalog.ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</catalogs>
+  <catalogs>Catalog.Эмитенты</catalogs>
   <documents>Document.Встреча</documents>
   <documents>Document.ЗапланированноеВзаимодействие</documents>
-  <documents>Document.Инвестиции</documents>
+  <documents>Document.КриптовалютныеИнвестиции</documents>
   <documents>Document.СообщениеSMS</documents>
   <documents>Document.СпотоваяСделка</documents>
   <documents>Document.ТелефонныйЗвонок</documents>

@@ -12,7 +12,7 @@
   </picture>
   <content>Catalog.Криптовалюты</content>
   <content>AccumulationRegister.ИнвестиционнаяДеятельность</content>
-  <content>Document.Инвестиции</content>
+  <content>Document.КриптовалютныеИнвестиции</content>
   <content>Report.СведенияОИнвестиционнойДеятельности</content>
   <content>DataProcessor.УправлениеИнтеграционнымиПроцессами</content>
   <content>InformationRegister.ЦеныКриптовалютныхАктивов</content>
@@ -23,4 +23,7 @@
   <content>Report.СтатистикаПоТорговымОперациям</content>
   <content>Report.ДинамикаЦенАктивов</content>
   <content>CommonPicture.РазделТорговыеОперации</content>
+  <content>Catalog.Акции</content>
+  <content>Catalog.СектораЭкономики</content>
+  <content>Catalog.Эмитенты</content>
 </mdclass:Subsystem>

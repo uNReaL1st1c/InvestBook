@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f25bb5b-9256-4085-b3c2-46b6aa6b2cbc">
+  <producedTypes>
+    <containerType typeId="8915f56d-838e-45fa-8c1d-43ce95e38fd6" valueTypeId="9e11e600-bf56-4322-8cda-203c11aaefe0"/>
+  </producedTypes>
+  <name>Актив</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актив</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Облигации</types>
+    <types>CatalogRef.Акции</types>
+    <types>CatalogRef.Криптовалюты</types>
+  </type>
+</mdclass:DefinedType>

@@ -70,13 +70,13 @@
     <fullTextSearch>Use</fullTextSearch>
   </attributes>
   <dimensions uuid="a7958e3e-a110-4aa9-ab07-93f194712e5f">
-    <name>Криптовалюта</name>
+    <name>Актив</name>
     <synonym>
       <key>ru</key>
-      <value>Криптовалюта</value>
+      <value>Актив</value>
     </synonym>
     <type>
-      <types>CatalogRef.Криптовалюты</types>
+      <types>DefinedType.Актив</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
