@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bfa1f537-19c4-49aa-bff2-807512c4aab0">
+  <producedTypes>
+    <objectType typeId="5b7521c1-e7b8-4c14-b56b-0f8a30227edf" valueTypeId="57f529a0-b40e-44c5-99f1-e9a6ddd6ac07"/>
+    <managerType typeId="c6fad3ec-eba6-466e-8d57-97596c6effc9" valueTypeId="2047654d-1cea-4a0a-8d0b-0f7a28a8e5ea"/>
+  </producedTypes>
+  <name>ДинамикаЦенАктивов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Динамика цен активов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДинамикаЦенАктивов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="347edd68-815e-4cf5-850b-37ff7a375df3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32e38b69-8675-4f0c-b543-3d550cd9454c">
+  <producedTypes>
+    <objectType typeId="f9e77d9d-4162-4ed5-9546-95d311d666a9" valueTypeId="ef11a01e-256d-461d-816c-e50e96df85ba"/>
+    <managerType typeId="850a68b0-f70f-432c-a388-13e3df150c06" valueTypeId="b2acfd8a-a05c-4d87-88a0-2b4c380b349f"/>
+  </producedTypes>
+  <name>СведенияОИнвестиционнойДеятельности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о инвестиционной деятельности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СведенияОИнвестиционнойДеятельности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <templates uuid="24475922-0b3b-45e2-993c-415cc72f0030">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

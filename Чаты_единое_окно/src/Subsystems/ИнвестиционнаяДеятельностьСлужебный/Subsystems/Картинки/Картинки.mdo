@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a32c2f25-b90d-45f9-83e3-7f350fdbd6c8">
+  <name>Картинки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Картинки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonPicture.РазделГлавное</content>
+  <parentSubsystem>Subsystem.ИнвестиционнаяДеятельностьСлужебный</parentSubsystem>
+</mdclass:Subsystem>

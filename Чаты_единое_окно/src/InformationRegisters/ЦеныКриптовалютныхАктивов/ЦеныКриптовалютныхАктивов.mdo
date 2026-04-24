@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54201371-ab45-4daa-aab8-5ac6bd8a96cb">
+  <producedTypes>
+    <selectionType typeId="fe276c1b-9310-449a-9a01-a5d0ca8a0767" valueTypeId="15193f83-0add-434c-8282-a2b6ece58e94"/>
+    <listType typeId="44b29e03-464c-46b5-9cbc-a0fc2294b1da" valueTypeId="2d9c4cec-cfb6-4a3c-abb4-017fef6b55b2"/>
+    <managerType typeId="034496bb-0d8b-47a2-91a7-9620966f782f" valueTypeId="08579c5a-83c0-4c27-87b1-78262525672a"/>
+    <recordSetType typeId="8a1a46c7-39c0-449f-80ae-612e2fcc9d87" valueTypeId="0bb1bf75-6520-4eb7-b024-b89dee344cfe"/>
+    <recordKeyType typeId="0aafd810-2782-434c-8e24-6a9d9db67768" valueTypeId="258fbd32-9d3a-499b-b944-6cd9269ab23d"/>
+    <recordType typeId="e3a0ccd8-74e8-461d-97be-8516557f2694" valueTypeId="1884ac50-2cd4-4f50-89e0-e740f153e8ae"/>
+    <recordManagerType typeId="705273a9-e1c7-4592-9af8-fbc03fccb7de" valueTypeId="09011a83-e435-46f1-b4d4-8c723bc5f553"/>
+  </producedTypes>
+  <name>ЦеныКриптовалютныхАктивов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены криптовалютных активов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Цена криптовалютного актива</value>
+  </recordPresentation>
+  <resources uuid="cc13e973-c24a-4545-af70-ff71aa63edd0">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>7</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="93cc88d0-dbf3-4609-b268-5f5570a0fb0b">
+    <name>Криптовалюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Криптовалюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Криптовалюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
