@@ -617,6 +617,8 @@
   <commonModules>CommonModule.ЗапретРедактированияРеквизитовОбъектовСлужебный</commonModules>
   <commonModules>CommonModule.ЗапретРедактированияРеквизитовОбъектовСлужебныйКлиент</commonModules>
   <commonModules>CommonModule.ИнтеграционныйМодульCryptoRank</commonModules>
+  <commonModules>CommonModule.ИнтеграционныйМодульТБанк</commonModules>
+  <commonModules>CommonModule.ИнтеграционныйМодульТБанкСлужебный</commonModules>
   <commonModules>CommonModule.ИнтеграцияПодсистемБСП</commonModules>
   <commonModules>CommonModule.ИнтеграцияПодсистемБСПКлиент</commonModules>
   <commonModules>CommonModule.ИнтеграцияПодсистемБСПКлиентПовтИсп</commonModules>
@@ -966,6 +968,7 @@
   <constants>Constant.ИспользоватьДополнительныеОтчетыИОбработки</constants>
   <constants>Constant.ИспользоватьДополнительныеРеквизитыИСведения</constants>
   <constants>Constant.ИспользоватьИнтеграциюСCryptoRank</constants>
+  <constants>Constant.ИспользоватьИнтеграциюТБанк</constants>
   <constants>Constant.ИспользоватьКомандуНапоминаний</constants>
   <constants>Constant.ИспользоватьНапоминанияПользователя</constants>
   <constants>Constant.ИспользоватьПолнотекстовыйПоиск</constants>
@@ -983,6 +986,7 @@
   <constants>Constant.НастройкаПроксиСервера</constants>
   <constants>Constant.НастройкиВходаПользователей</constants>
   <constants>Constant.НастройкиИнтеграцииCryptoRank</constants>
+  <constants>Constant.НастройкиИнтеграцииТБанк</constants>
   <constants>Constant.НастройкиКолонтитулов</constants>
   <constants>Constant.НеИспользоватьРазделениеПоОбластямДанных</constants>
   <constants>Constant.ОсновнойЯзык</constants>
@@ -1189,9 +1193,9 @@
   <reports>Report.УниверсальныйОтчет</reports>
   <reports>Report.УчастникиГруппПользователей</reports>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
+  <dataProcessors>DataProcessor.АктивныеПользователи</dataProcessors>
   <dataProcessors>DataProcessor.БлокировкаРаботыПользователей</dataProcessors>
   <dataProcessors>DataProcessor.ВводКонтактнойИнформации</dataProcessors>
-  <dataProcessors>DataProcessor.АктивныеПользователи</dataProcessors>
   <dataProcessors>DataProcessor.ЖурналРегистрации</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДанныхИзФайла</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаКурсовВалют</dataProcessors>
@@ -1207,6 +1211,7 @@
   <dataProcessors>DataProcessor.РегламентныеИФоновыеЗадания</dataProcessors>
   <dataProcessors>DataProcessor.РезультатыОбновленияПрограммы</dataProcessors>
   <dataProcessors>DataProcessor.РекомендацияПоПовышениюСкоростиРаботы</dataProcessors>
+  <dataProcessors>DataProcessor.СервисТБанк</dataProcessors>
   <dataProcessors>DataProcessor.Сканирование</dataProcessors>
   <dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>
   <dataProcessors>DataProcessor.УправлениеИнтеграционнымиПроцессами</dataProcessors>

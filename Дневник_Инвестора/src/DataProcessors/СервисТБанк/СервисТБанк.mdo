@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46cbeffa-cfea-4f2d-a683-925de7416609">
+  <producedTypes>
+    <objectType typeId="4056cebd-08f9-44d9-9275-57b5b30aa793" valueTypeId="18f32057-7ad6-41d4-90fb-82e0a0ef98a6"/>
+    <managerType typeId="2a5ca599-99b2-415e-a75c-21dec0e2028a" valueTypeId="094bffd8-1267-4df0-b569-527fd2ba5baa"/>
+  </producedTypes>
+  <name>СервисТБанк</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервис Т-Банк</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СервисТБанк.Form.ОсновнаяФормаСервисаПоРаботеСТБанком</defaultForm>
+  <forms uuid="dec9e046-d0eb-4edd-8e60-85cf26eb4b6c">
+    <name>ОсновнаяФормаСервисаПоРаботеСТБанком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная форма сервиса по работе с Т-Банком</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

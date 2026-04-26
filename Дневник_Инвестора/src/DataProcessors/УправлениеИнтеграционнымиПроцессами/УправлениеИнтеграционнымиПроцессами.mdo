@@ -29,4 +29,13 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="b748731f-847e-48a0-9387-95c539f4d4d5">
+    <name>НастройкиИнтеграцииСТБанком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки интеграции с Т-Банком</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:DataProcessor>

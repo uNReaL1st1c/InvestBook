@@ -71,6 +71,66 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormGroup">
+    <name>ГруппаНастройкиСинхронизацииТБанк</name>
+    <id>12</id>
+    <items xsi:type="form:Button">
+      <name>НастроитьИнтеграциюСТБанк</name>
+      <id>14</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>НастроитьИнтеграциюСТБанкРасширеннаяПодсказка</name>
+        <id>15</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Hyperlink</type>
+      <commandName>Form.Command.НастроитьИнтеграциюСТБанк</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Настройки синхронизации с Т-Банк</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаНастройкиСинхронизацииТБанкРасширеннаяПодсказка</name>
+      <id>13</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <behavior>Auto</behavior>
+      <representation>StrongSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
     <name>ГруппаСинхронизацияДанныхПоCryptoRank</name>
     <id>4</id>
     <items xsi:type="form:FormField">
@@ -272,6 +332,23 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>НастроитьИнтеграциюСCryptoRank</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>НастроитьИнтеграциюСТБанк</name>
+    <title>
+      <key>ru</key>
+      <value>Настроить интеграцию с Т-Банк</value>
+    </title>
+    <id>3</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>НастроитьИнтеграциюСТБанк</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

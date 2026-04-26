@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a82bffd2-9a98-4743-a57e-30bf76a9ae96">
+  <name>ТБанк</name>
+  <synonym>
+    <key>ru</key>
+    <value>Т-Банк</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.ИнтеграционныйМодульТБанк</content>
+  <content>Constant.ИспользоватьИнтеграциюТБанк</content>
+  <content>Constant.НастройкиИнтеграцииТБанк</content>
+  <parentSubsystem>Subsystem.ИнтеграционныеМодули</parentSubsystem>
+</mdclass:Subsystem>

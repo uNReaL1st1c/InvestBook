@@ -6,9 +6,9 @@
     <value>Интеграционные модули</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
-  <content>CommonModule.ИнтеграционныйМодульCryptoRank</content>
-  <content>ScheduledJob.СинхронизацияДанныхПоCryptoRank</content>
-  <content>Constant.ИспользоватьИнтеграциюСCryptoRank</content>
-  <content>Constant.НастройкиИнтеграцииCryptoRank</content>
+  <includeInCommandInterface>true</includeInCommandInterface>
   <content>DataProcessor.УправлениеИнтеграционнымиПроцессами</content>
+  <content>DataProcessor.СервисТБанк</content>
+  <subsystems>CryptoRank</subsystems>
+  <subsystems>ТБанк</subsystems>
 </mdclass:Subsystem>

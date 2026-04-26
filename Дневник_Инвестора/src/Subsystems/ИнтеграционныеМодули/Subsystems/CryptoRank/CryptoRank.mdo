@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="113d43ab-965a-4f91-ba0e-bb32c6bdc855">
+  <name>CryptoRank</name>
+  <synonym>
+    <key>ru</key>
+    <value>Crypto rank</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.ИнтеграционныйМодульCryptoRank</content>
+  <content>ScheduledJob.СинхронизацияДанныхПоCryptoRank</content>
+  <content>Constant.ИспользоватьИнтеграциюСCryptoRank</content>
+  <content>Constant.НастройкиИнтеграцииCryptoRank</content>
+  <parentSubsystem>Subsystem.ИнтеграционныеМодули</parentSubsystem>
+</mdclass:Subsystem>

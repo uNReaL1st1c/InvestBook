@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="efcec9b7-1490-4ca6-bee1-bd02ff1e6a1b">
+  <producedTypes>
+    <managerType typeId="c2da80ec-9791-44e9-bf56-52b65a3b869f" valueTypeId="1309f50d-3f43-40df-823e-48f2859cd3f1"/>
+    <valueManagerType typeId="5eafbb06-6a5a-4de5-abdb-f609f91cc410" valueTypeId="461dc461-6f9c-400d-a5ab-ae8ba9986134"/>
+    <valueKeyType typeId="c6c311ef-e812-4d59-a071-3a46cb02bbf8" valueTypeId="66bcd7f6-f6bf-44f0-882b-13ddf4910e75"/>
+  </producedTypes>
+  <name>ИспользоватьИнтеграциюТБанк</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать интеграцию с Т-Банк (Инвестиции)</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
