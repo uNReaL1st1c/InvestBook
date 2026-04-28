@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56dacff9-8bc2-478a-90a4-b6e7012ad4eb">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56dacff9-8bc2-478a-90a4-b6e7012ad4eb">
   <producedTypes>
     <objectType typeId="1a57a924-25ab-4e47-b162-493a81e92042" valueTypeId="95cdf923-fb3e-4e6a-9f2a-fb8d778b9981"/>
     <refType typeId="0499a46c-b155-49b8-8659-4c3ece4d1894" valueTypeId="7e0d5ee1-872c-40d3-bae4-4a7de57d0d29"/>
@@ -32,6 +32,99 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="59b54329-3322-42ad-9841-ef8a90c3ccfb">
+      <name>Государство</name>
+      <description>Государство</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="b5a6e5f1-b4e0-4dc8-8c97-7041f2af1d4d">
+      <name>IT</name>
+      <description>IT</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="6db1b184-e9e1-447d-8817-1c48322c8a76">
+      <name>Финансы</name>
+      <description>Финансы</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="f5212eec-0ccc-4236-b2f7-37ed8b6db9ef">
+      <name>Здравоохранение</name>
+      <description>Здравоохранение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="6002d20a-a459-4b1f-abcd-3428e6f470e4">
+      <name>Энергетика</name>
+      <description>Энергетика</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="710e76a6-f3bb-402d-ae6e-d4b9bacb95f2">
+      <name>Промышленность</name>
+      <description>Промышленность</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="eec4d9d5-21ee-4798-ac41-d51037e45840">
+      <name>Недвижимость</name>
+      <description>Недвижимость</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="8ef6bd8d-7395-4614-ab2c-5b4800e67eec">
+      <name>КоммунальноеХозяйство</name>
+      <description>Коммунальное хозяйство</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="39180700-fb2e-49b1-8260-fd4ba18640ea">
+      <name>Телекоммуникации</name>
+      <description>Телекоммуникации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="2504d78e-cfd3-4691-9ded-a5eb86fe08a1">
+      <name>Муниципальный</name>
+      <description>Муниципальный</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="37b6b6b7-a9d3-4a6e-a117-06184ae1baba">
+      <name>ПотребительскийСектор</name>
+      <description>Потребительский сектор</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="cf246dd9-81a6-4caa-9bcc-ba3a89bf679e">
+      <name>Сырьё</name>
+      <description>Сырьё</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="ce8ed75c-fe21-49eb-a97c-3a58da625630">
+      <name>Прочее</name>
+      <description>Прочее</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+  </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
 </mdclass:Catalog>

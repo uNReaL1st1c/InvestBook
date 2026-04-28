@@ -1181,6 +1181,7 @@
   <enums>Enum.ФорматыХраненияМногостраничныхФайлов</enums>
   <enums>Enum.ЦветаСвойств</enums>
   <enums>Enum.ЦветностиИзображения</enums>
+  <enums>Enum.УровниРискаЭмитента</enums>
   <reports>Report.ДинамикаЦенАктивов</reports>
   <reports>Report.ДлительностьОтложенногоОбновления</reports>
   <reports>Report.ОбъемНенужныхФайлов</reports>
