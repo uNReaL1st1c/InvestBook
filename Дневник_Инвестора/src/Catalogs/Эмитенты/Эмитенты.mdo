@@ -124,15 +124,15 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="5bf8de1e-07a1-419f-8997-ee07ada62763">
-    <name>УровеньРиска</name>
+  <attributes uuid="747ff15c-8e78-4555-8d01-d1609d85ec82">
+    <name>Описание</name>
     <synonym>
       <key>ru</key>
-      <value>Уровень риска</value>
+      <value>Описание</value>
     </synonym>
-    <comment>Внутренний уровень риска (Оцененный Т-Банком)</comment>
     <type>
-      <types>EnumRef.УровниРискаЭмитента</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
