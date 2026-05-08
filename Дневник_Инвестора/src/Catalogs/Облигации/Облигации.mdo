@@ -108,6 +108,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Облигации.Form.ФормаЭлемента</defaultObjectForm>
   <attributes uuid="b2302a38-12c5-4164-a59d-5ab1ff59d9d8">
     <name>Тикер</name>
     <synonym>
@@ -221,4 +222,32 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="97eb926f-31ed-453f-a1bb-fa1c8d749e59">
+    <name>ИдентификаторАктива</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор актива</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="cb8d4f0d-da88-473d-b616-e09ed6f5c41e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
