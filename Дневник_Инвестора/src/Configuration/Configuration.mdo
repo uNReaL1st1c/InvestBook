@@ -801,6 +801,7 @@
   <commonModules>CommonModule.ФайловаяСистемаСлужебныйКлиентСервер</commonModules>
   <commonModules>CommonModule.ФизическиеЛицаКлиентСервер</commonModules>
   <commonModules>CommonModule.ФизическиеЛицаКлиентСерверЛокализация</commonModules>
+  <commonModules>CommonModule.ФабрикаПоРаботеСАктивами</commonModules>
   <commonAttributes>CommonAttribute.ОтредактированныеПредопределенныеРеквизиты</commonAttributes>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <xDTOPackages>XDTOPackage.ApplicationExtensionsManifest_1_0_0_1</xDTOPackages>
@@ -1166,6 +1167,7 @@
   <enums>Enum.СпособыУстановкиКурсаВалюты</enums>
   <enums>Enum.СтатусыИзвлеченияТекстаФайлов</enums>
   <enums>Enum.СтатусыИсходящегоЭлектронногоПисьма</enums>
+  <enums>Enum.СтатусыОбработкиОчередей</enums>
   <enums>Enum.СтатусыОбработчиковОбновления</enums>
   <enums>Enum.СтатусыЭлектронныхПисем</enums>
   <enums>Enum.ТипыДанныхКэшаПрограммныхИнтерфейсов</enums>
@@ -1176,12 +1178,12 @@
   <enums>Enum.ТипыТекстовЭлектронныхПисем</enums>
   <enums>Enum.ТипыФайловДляВстроенногоРедактора</enums>
   <enums>Enum.ТипыХраненияФайлов</enums>
+  <enums>Enum.УровниРискаЭмитента</enums>
   <enums>Enum.ФорматыСканированногоИзображения</enums>
   <enums>Enum.ФорматыСохраненияОтчетов</enums>
   <enums>Enum.ФорматыХраненияМногостраничныхФайлов</enums>
   <enums>Enum.ЦветаСвойств</enums>
   <enums>Enum.ЦветностиИзображения</enums>
-  <enums>Enum.УровниРискаЭмитента</enums>
   <reports>Report.ДинамикаЦенАктивов</reports>
   <reports>Report.ДлительностьОтложенногоОбновления</reports>
   <reports>Report.ОбъемНенужныхФайлов</reports>
@@ -1245,6 +1247,7 @@
   <informationRegisters>InformationRegister.ОбработчикиОбновления</informationRegisters>
   <informationRegisters>InformationRegister.ОбработчикиОбновленияОбщихДанных</informationRegisters>
   <informationRegisters>InformationRegister.ОтправленныеСерверныеОповещения</informationRegisters>
+  <informationRegisters>InformationRegister.ОчередьОбработкиЭмитентаАктива</informationRegisters>
   <informationRegisters>InformationRegister.ПараметрыРаботыВерсийРасширений</informationRegisters>
   <informationRegisters>InformationRegister.ПараметрыРаботыПрограммы</informationRegisters>
   <informationRegisters>InformationRegister.ПериодическиеСерверныеОповещения</informationRegisters>

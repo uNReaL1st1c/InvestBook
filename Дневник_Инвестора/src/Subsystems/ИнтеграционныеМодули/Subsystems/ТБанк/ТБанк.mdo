@@ -9,5 +9,6 @@
   <content>CommonModule.ИнтеграционныйМодульТБанк</content>
   <content>Constant.ИспользоватьИнтеграциюТБанк</content>
   <content>Constant.НастройкиИнтеграцииТБанк</content>
+  <content>InformationRegister.ОчередьОбработкиЭмитентаАктива</content>
   <parentSubsystem>Subsystem.ИнтеграционныеМодули</parentSubsystem>
 </mdclass:Subsystem>

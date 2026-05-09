@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a6fab89-7337-4e01-930a-2fc9768b0718">
+  <producedTypes>
+    <selectionType typeId="51e580bd-482c-4552-933b-1c379caa0fd1" valueTypeId="995a581d-a859-46ce-8b7b-b99a0a751ac5"/>
+    <listType typeId="c228661f-a4d7-4574-b075-351975b5e738" valueTypeId="bcd29cf0-9899-418f-93b9-7e7d534582de"/>
+    <managerType typeId="1ee7185b-e47d-4766-8051-10559c562aa6" valueTypeId="7cfb4a9c-c291-4fba-a5b9-3f633696df1e"/>
+    <recordSetType typeId="ba62fc14-095b-4590-81ac-3adf4bcecd30" valueTypeId="584789f4-6dcd-4b88-90ce-6e40a200bf7b"/>
+    <recordKeyType typeId="139a2989-b75e-4c1e-ba88-d87f67636f7c" valueTypeId="af2043c2-7553-400b-bad5-4649dea35412"/>
+    <recordType typeId="df537421-c888-4037-afcd-d0b9fff10489" valueTypeId="6328f07b-bf7d-4ba6-aec5-bfaddc26dc74"/>
+    <recordManagerType typeId="d8bfd06b-8f47-471c-841a-1dfdcb478ab8" valueTypeId="6925bbbc-e909-48df-88bd-03587412a07d"/>
+  </producedTypes>
+  <name>ОчередьОбработкиЭмитентаАктива</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь обработки эмитента актива</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Очередь обработки эмитента актива</value>
+  </recordPresentation>
+  <resources uuid="0e3d1660-931c-4e24-9ff4-8710f030ba95">
+    <name>СтатусОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус обработки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОбработкиОчередей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f191e909-4656-4d55-9755-a789228d7674">
+    <name>Актив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актив</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Актив</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e1cfe2b9-b21a-4ccd-9161-3198f823608a">
+    <name>ИдентификаторЭмитента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор эмитента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

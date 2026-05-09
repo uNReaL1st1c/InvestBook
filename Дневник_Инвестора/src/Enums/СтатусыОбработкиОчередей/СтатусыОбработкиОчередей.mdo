@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7393bced-dedb-4684-a0b9-28096a694f0d">
+  <producedTypes>
+    <refType typeId="0d609cc7-da4c-4c61-9029-d9ec84935000" valueTypeId="f57a289b-9947-4ec2-b322-836a952e932f"/>
+    <listType typeId="f933dca9-4e7a-4691-b0e2-71592a7e8430" valueTypeId="85a6971e-2054-48c7-8018-249541424d1b"/>
+    <managerType typeId="7b224503-fbd4-4126-afee-b828d94bd813" valueTypeId="de20d5e5-9478-438d-801d-7ecde39adfee"/>
+  </producedTypes>
+  <name>СтатусыОбработкиОчередей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы обработки очередей</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="31c42a82-f3e0-4843-be2a-633a5f60d03c">
+    <name>Обработан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработан</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="96bbaf07-f4d7-431e-809b-7ea25edad93f">
+    <name>НеОбработан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не обработан</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
